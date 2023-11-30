@@ -9,7 +9,7 @@ Go To Google
     SL.Open Browser                           ${url}
     ...                                       ${browser}
     ...                                       Edge
-    ...                                       http://${remote_selenium_server_tmp}:17556
+    ...                                       http://${remote_selenium_server_tmp}:17556/wd/hub
     sleep                                     5s
     SL.Close Browser
 
