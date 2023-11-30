@@ -2,7 +2,7 @@
 Library                 SeleniumLibrary         WITH NAME                   SL
 
 *** Keywords ***
-Open Browser To Google
+Go To Google
     [Arguments]                               ${remote_selenium_server_tmp}
     ...                                       ${url}
     ...                                       ${browser}
@@ -14,4 +14,4 @@ Open Browser To Google
     SL.Close Browser
 
 Open_Browser_To_Google
-    Open Browser To Google      10.2.9.116      https://google.com      Edge
+    Go To Google      10.2.9.116      https://google.com      Edge
