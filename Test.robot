@@ -15,4 +15,4 @@ Go To Google
 
 Open_Browser_To_Google
 #    Go To Google      119.0.2151.97      https://google.com      Edge
-    Open Browser      https://google.com      Edge      remote_url=http://locahost:9515
+    Open Browser      https://google.com      Edge      remote_url=http://10.2.9.116:9515
