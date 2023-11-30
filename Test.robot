@@ -9,9 +9,9 @@ Go To Google
     SL.Open Browser                           ${url}
     ...                                       ${browser}
     ...                                       Edge
-    ...                                       http://${remote_selenium_server_tmp}:17556/wd/hub
+    ...                                       http://${remote_selenium_server_tmp}:9515/wd/hub
     sleep                                     5s
     SL.Close Browser
 
 Open_Browser_To_Google
-    Go To Google      10.2.9.116      https://google.com      Edge
+    Go To Google      119.0.2151.97      https://google.com      Edge
