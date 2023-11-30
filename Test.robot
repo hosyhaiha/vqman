@@ -8,7 +8,7 @@ Go To Google
     ...                                       ${browser}
     SL.Open Browser                           ${url}
     ...                                       ${browser}
-    ...                                       firefox
+    ...                                       Edge
     ...                                       http://${remote_selenium_server_tmp}:17556
     sleep                                     5s
     SL.Close Browser
