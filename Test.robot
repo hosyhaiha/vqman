@@ -10,9 +10,9 @@ Login to ONE IoT
     Set Window Position   0   0
     Maximize Browser Window
      Sleep           5s
-    Input Text    //*[@id="email"]    ${email}
+    Input Text    //*[@id="email"]    admin
      Sleep           5s
-    Input Text    //*[@id="password"]    ${pass}
+    Input Text    //*[@id="password"]    admin@123
      Sleep           5s
     Click Button    //*[@id="login_form"]/form/div[4]/button
 
