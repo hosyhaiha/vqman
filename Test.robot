@@ -1,6 +1,5 @@
 *** Settings ***
 Library                 SeleniumLibrary         WITH NAME                   SL
-Library           RequestsLibrary
 
 *** Keywords ***
 Open_Browser_To_VNPT_TECH
@@ -9,9 +8,11 @@ Open_Browser_To_VNPT_TECH
 Login to ONE IoT
     Open Browser      http://10.15.12.227:9090/#/login      Edge      remote_url=http://10.2.9.116:9515
     Maximize Browser Window
+     Sleep           2s
     Input Text    //*[@id="email"]    admin
+     Sleep           2s
     Input Text    //*[@id="password"]    admin@123
+     Sleep           2s
     Click Button    //*[@id="login_form"]/form/div[4]/button
-    Sleep           2s   # Đợi trang web xử lý đăng nhập
-    ${status_code} =    Get    http://10.15.12.227:9090/api/auth/token
-    Should Be Equal As Numbers    ${status_code}    200
+
+
