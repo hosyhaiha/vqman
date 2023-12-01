@@ -1,5 +1,6 @@
 *** Settings ***
 Library                 SeleniumLibrary         WITH NAME                   SL
+Library           RequestsLibrary
 
 *** Keywords ***
 Open_Browser_To_VNPT_TECH
@@ -12,4 +13,5 @@ Login to ONE IoT
     Input Text    //*[@id="password"]    admin@123
     Click Button    //*[@id="login_form"]/form/div[4]/button
     Sleep           2s   # Đợi trang web xử lý đăng nhập
-    Should Be       http://10.15.12.227:9090/#/
+    ${status_code} =    Get Request    http://10.15.12.227:9090/api/auth/token
+    Should Be Equal As Numbers    ${status_code}    200
